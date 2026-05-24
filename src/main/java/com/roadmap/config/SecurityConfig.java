@@ -45,6 +45,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/gallery/**").permitAll()
                         .requestMatchers("/api/ai/**").permitAll()
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                        .requestMatchers("/api/ai/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
