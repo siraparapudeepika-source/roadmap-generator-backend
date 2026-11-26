@@ -109,7 +109,7 @@ public class OpenAIService {
 
         // Groq request body
         Map<String, Object> body = Map.of(
-
+// groq ai model changed due to the upgrading the version
             "model", "openai/gpt-oss-120b",
 
             "messages", List.of(
